@@ -1,0 +1,39 @@
+{
+  "name": "genpark-multi-modal-chart-graph-data-extractor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-modal chart and graph data extractor decomposing visual plots into structured markdown tables and Pandas DataFrames.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "visual-reasoning",
+  "tags": [
+    "chart-extraction",
+    "deplot",
+    "chartqa",
+    "visual-table-parser",
+    "multimodal-ocr"
+  ],
+  "inputs": {
+    "chart_image_url": {
+      "type": "string"
+    },
+    "chart_type_hint": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "chart_extraction_id": {
+      "type": "string"
+    },
+    "detected_chart_type": {
+      "type": "string"
+    },
+    "extracted_markdown_table": {
+      "type": "string"
+    },
+    "structured_dataframe_json_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
